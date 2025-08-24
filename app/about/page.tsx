@@ -145,8 +145,8 @@ export default function AboutPage() {
                   Available When You Need Us
                 </h3>
                 <p className="text-muted-foreground">
-                  Flexible pickup times, 24/7 customer support, and emergency assistance. 
-                  We&apos;re here for you around the clock.
+                  Flexible pickup times, customer support (9 AM - 8 PM), and emergency assistance. 
+                  We&apos;re here for you during business hours.
                 </p>
               </div>
               

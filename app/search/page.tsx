@@ -37,7 +37,15 @@ function SearchResultsContent() {
   
   const locations = [
     "Kukatpally, Hyderabad",
-    "Madhapur, Hyderabad"
+    "Madhapur, Hyderabad",
+    "Ameerpet, Hyderabad",
+    "Secunderabad, Hyderabad",
+    "Gachibowli, Hyderabad",
+    "Begumpet, Hyderabad",
+    "Kondapur, Hyderabad",
+    "Miyapur, Hyderabad",
+    "Bachupally, Hyderabad",
+    "Nizampet, Hyderabad"
   ]
   
   // Update states when URL params change

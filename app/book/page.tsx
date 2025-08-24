@@ -330,7 +330,7 @@ export default function BookPage() {
                   </li>
                   <li className="flex items-center gap-2">
                     <div className="w-2 h-2 bg-primary rounded-full"></div>
-                    <span>24/7 support</span>
+                    <span>Daily support (9 AM - 8 PM)</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <div className="w-2 h-2 bg-primary rounded-full"></div>

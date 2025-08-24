@@ -131,7 +131,7 @@ export default function ContactPage() {
                   </div>
                   <div className="flex justify-between">
                     <span>Emergency Service</span>
-                    <span>24/7 Available</span>
+                    <span>9 AM - 8 PM</span>
                   </div>
                 </div>
               </CardContent>

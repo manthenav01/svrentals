@@ -37,7 +37,7 @@ export function Footer() {
               <div className="flex items-center space-x-2">
                 <MapPin className="h-4 w-4 text-primary" />
                 <span className="text-sm text-muted-foreground">
-                  Hyderabad, Telangana, India
+                  MIG 3rd Phase, Sathibabu Biryani Backside, 15-31-2M-41/1, Kukatpally Housing Board Colony, Kukatpally, Hyderabad, Telangana 500072, India
                 </span>
               </div>
               <div className="flex items-center space-x-2">
@@ -48,8 +48,8 @@ export function Footer() {
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="h-4 w-4 text-primary" />
-                <Link href="mailto:info@svrentals.com" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  info@svrentals.com
+                <Link href="mailto:svrentals.hyd@gmail.com" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  svrentals.hyd@gmail.com
                 </Link>
               </div>
             </div>
@@ -61,11 +61,8 @@ export function Footer() {
               <div className="flex items-center space-x-2">
                 <Clock className="h-4 w-4 text-primary" />
                 <span className="text-sm text-muted-foreground">
-                  Mon - Sat: 8:00 AM - 8:00 PM
+                  Daily: 9:00 AM - 8:00 PM
                 </span>
-              </div>
-              <div className="text-sm text-muted-foreground ml-6">
-                Sun: 9:00 AM - 6:00 PM
               </div>
             </div>
           </div>

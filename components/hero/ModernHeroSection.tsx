@@ -88,8 +88,8 @@ export function ModernHeroSection() {
                   className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed font-normal"
                   style={{ textShadow: '0 1px 2px rgba(255,255,255,0.3)' }}
                 >
-                  Experience freedom like never before. Premium bikes and cars available 
-                  across Hyderabad with instant booking and 24/7 support.
+                  Rent bikes in Hyderabad with affordable rates.
+                  Self-drive vehicle rentals with instant online booking and customer support.
                 </motion.p>
               </motion.div>
             </div>

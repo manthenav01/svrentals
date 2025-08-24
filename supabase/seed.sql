@@ -10,3 +10,18 @@ VALUES
  ARRAY['Comfortable saddle', 'Rear carrier', 'LED lights', 'Chain guard', 'Mudguards'], 
  'https://images.unsplash.com/photo-1545198530-9bbf2334b6c5?w=800', 
  150, 800, 4500, true, 'Madhapur, Hyderabad', 0, 'Standard', '12"', 4.3, 45, 320),
+
+('TVS Jupiter', 'scooter', 'TVS', 'Jupiter', 2023, 'Smooth and stylish scooter for urban commuting',
+ ARRAY['Powerful engine', 'LED headlamp', 'Digital console', 'Spacious under-seat storage', 'Tubeless tires'],
+ 'https://images.unsplash.com/photo-1504215680853-026ed2a45def?w=800',
+ 180, 900, 5000, true, 'Kukatpally, Hyderabad', 0, 'Standard', '12"', 4.5, 25, 150),
+
+('Suzuki Access 125', 'scooter', 'Suzuki', 'Access 125', 2024, 'Sleek and stylish scooter with great mileage',
+ ARRAY['Fuel-efficient engine', 'LED headlamp', 'Digital console', 'Spacious under-seat storage', 'Tubeless tires'],
+ 'https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=800',
+ 200, 1000, 5200, true, 'Madhapur, Hyderabad', 0, 'Standard', '12"', 4.6, 40, 180),
+
+('Royal Enfield Classic 350', 'bike', 'Royal Enfield', 'Classic 350', 2023, 'Iconic cruiser with vintage styling',
+ ARRAY['Retro design', 'Comfortable seating', 'Powerful engine', 'Classic round headlamp', 'Alloy wheels'],
+ 'https://images.unsplash.com/photo-1518655048521-f130df041f66?w=800',
+ 350, 2100, 10500, true, 'Kukatpally, Hyderabad', 5, 'Large', '18"', 4.8, 60, 300),

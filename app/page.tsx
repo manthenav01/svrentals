@@ -4,6 +4,7 @@ import { ModernHeroSection } from "@/components/hero/ModernHeroSection"
 import { AvailableVehicles } from "@/components/AvailableVehicles"
 import { FAQSection } from "@/components/FAQSection"
 import { StoreLocations } from "@/components/StoreLocations"
+import { ServicesSection } from "@/components/ServicesSection"
 
 export default function Home() {
   return (
@@ -11,8 +12,8 @@ export default function Home() {
       {/* Modern Hero Section */}
       <ModernHeroSection />
 
-      {/* Available Vehicles */}
-      <AvailableVehicles />
+      {/* Services Section - SEO optimized */}
+      <ServicesSection />
 
       {/* Why choose */}
       <section className="section-padding">
@@ -41,7 +42,7 @@ export default function Home() {
                 </div>
                 <CardTitle className="text-xl mb-3">Local & Personal</CardTitle>
                 <CardDescription>
-                  Locally-owned Hyderabad business. We know our city, we care about our community, and we&apos;re here for you 24/7.
+                  Locally-owned Hyderabad business. We know our city, we care about our community, and we&apos;re here for you daily from 9 AM to 8 PM.
                 </CardDescription>
               </Card>
               <Card className="enterprise-card text-center p-8">

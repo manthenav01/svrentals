@@ -6,7 +6,7 @@ CREATE TABLE IF NOT EXISTS public.bikes (
     id UUID DEFAULT uuid_generate_v4() PRIMARY KEY,
     created_at TIMESTAMP WITH TIME ZONE DEFAULT TIMEZONE('utc', NOW()) NOT NULL,
     name TEXT NOT NULL,
-    type TEXT CHECK (type IN ('mountain', 'road', 'hybrid', 'electric', 'city')) NOT NULL,
+    type TEXT CHECK (type IN ('scooter', 'road', 'hybrid', 'electric', 'bike')) NOT NULL,
     brand TEXT NOT NULL,
     model TEXT NOT NULL,
     year INTEGER NOT NULL,

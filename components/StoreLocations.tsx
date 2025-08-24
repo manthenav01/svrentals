@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { MapPin, Phone, Clock, Star, Navigation } from "lucide-react"
+import { MapPin, Phone, Clock, Navigation } from "lucide-react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 
@@ -9,15 +9,13 @@ const locations = [
   {
     id: 1,
     name: "SV Rentals",
-    address: "8-3-389/2/A, near Metro Pillar No-A1057, opp. South Indian Shopping Mall, Ameerpet, Hyderabad, Telangana 500073",
-    phone: "+91 98765 43210",
-    hours: "Open 24/7",
-    rating: 4.9,
-    reviews: 2196,
-    mapUrl: "https://maps.google.com/maps?q=17.4947,78.3996",
-    embedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.2974177583475!2d78.39760001487727!3d17.494700088001234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTfCsDI5JzQwLjkiTiA3OMKwMjMnNTguNiJF!5e0!3m2!1sen!2sin!4v1234567890",
-    lat: 17.4947,
-    lng: 78.3996
+    address: "MIG 3rd Phase, Sathibabu Biryani Backside, 15-31-2M-41/1, Kukatpally Housing Board Colony, Kukatpally, Hyderabad, Telangana 500072, India",
+    phone: "+91 79967 90039",
+    hours: "9 AM - 8 PM",
+    mapUrl: "https://maps.google.com/maps?q=17.4843,78.3907",
+    embedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.5!2d78.3907!3d17.4843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTfCsDI5JzEwLjMiTiA3OMKwMjMnMjYuNSJF!5e0!3m2!1sen!2sin!4v1234567890",
+    lat: 17.4843,
+    lng: 78.3907
   }
 ]
 
@@ -26,7 +24,7 @@ export function StoreLocations() {
 
   const handleDirections = (location: typeof locations[0]) => {
     window.open(
-      `https://www.google.com/maps/dir/?api=1&destination=${location.lat},${location.lng}`,
+      `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(location.address)}`,
       '_blank'
     )
   }
@@ -41,7 +39,7 @@ export function StoreLocations() {
             </h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
               Conveniently located in Hyderabad to serve you better. 
-              Open 24/7 for your convenience.
+              Open daily from 9 AM to 8 PM for your convenience.
             </p>
           </div>
 
@@ -68,14 +66,6 @@ export function StoreLocations() {
                     <p className="text-sm text-muted-foreground">
                       {location.address}
                     </p>
-                    
-                    <div className="flex items-center gap-1 text-sm">
-                      <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-                      <span className="font-semibold">{location.rating}</span>
-                      <span className="text-muted-foreground">
-                        ({location.reviews} reviews)
-                      </span>
-                    </div>
                     
                     <div className="space-y-2 text-sm">
                       <div className="flex items-center gap-2">
@@ -114,24 +104,13 @@ export function StoreLocations() {
                   loading="lazy"
                   allowFullScreen
                   referrerPolicy="no-referrer-when-downgrade"
-                  src={`https://www.google.com/maps/embed/v1/place?key=YOUR_API_KEY&q=${selectedLocation.lat},${selectedLocation.lng}&zoom=15`}
+                  src={`https://www.google.com/maps/embed/v1/place?key=${process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}&q=SV+Rentals,+${encodeURIComponent(selectedLocation.address)}&zoom=15`}
                   title={`Map showing ${selectedLocation.name}`}
                 />
               </Card>
             </div>
           </div>
 
-          {/* Note about API Key */}
-          <div className="mt-8 p-4 bg-yellow-50 border border-yellow-200 rounded-lg">
-            <p className="text-sm text-yellow-800">
-              <strong>Note:</strong> To display the interactive map, you'll need to:
-            </p>
-            <ol className="text-sm text-yellow-700 mt-2 ml-5 list-decimal">
-              <li>Get a Google Maps API key from the <a href="https://console.cloud.google.com/google/maps-apis/overview" target="_blank" rel="noopener noreferrer" className="underline">Google Cloud Console</a></li>
-              <li>Enable the Maps Embed API</li>
-              <li>Replace "YOUR_API_KEY" in the iframe src with your actual API key</li>
-            </ol>
-          </div>
         </div>
       </div>
     </section>
