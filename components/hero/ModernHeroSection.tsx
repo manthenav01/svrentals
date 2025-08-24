@@ -15,11 +15,7 @@ export function ModernHeroSection() {
     hidden: { opacity: 0, y: 30 },
     visible: {
       opacity: 1,
-      y: 0,
-      transition: {
-        duration: 0.8,
-        ease: "easeOut"
-      }
+      y: 0
     }
   }
 
@@ -35,13 +31,13 @@ export function ModernHeroSection() {
   return (
     <section 
       ref={ref}
-      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-emerald-50 via-green-100 to-teal-200"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-gray-50 via-white to-gray-100"
     >
       {/* Animated Background */}
       <AnimatedBackground />
       
       {/* Subtle overlay for better text contrast */}
-      <div className="absolute inset-0 bg-gradient-to-br from-emerald-500/20 via-green-600/30 to-teal-700/40 z-10" />
+      <div className="absolute inset-0 bg-gradient-to-br from-emerald-500/5 via-green-600/10 to-teal-700/15 z-10" />
 
       {/* Main Content */}
       <div className="relative z-20 w-full">

@@ -1,8 +1,7 @@
 import type { Metadata } from "next"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-import { Calendar, Clock, MapPin, Phone, User, CreditCard, Shield } from "lucide-react"
+import { Calendar, Phone, User, CreditCard, Shield } from "lucide-react"
 import Link from "next/link"
 
 export const metadata: Metadata = {
@@ -312,7 +311,7 @@ export default function BookPage() {
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
                   <Shield className="h-5 w-5 text-primary" />
-                  <span>What's Included</span>
+                  <span>What&apos;s Included</span>
                 </CardTitle>
               </CardHeader>
               <CardContent>

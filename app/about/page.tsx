@@ -1,10 +1,10 @@
 import { Metadata } from "next"
-import { Card, CardContent } from "@/components/ui/card"
+import { Card } from "@/components/ui/card"
 import { Shield, Heart, Users, MapPin, Clock, Award } from "lucide-react"
 
 export const metadata: Metadata = {
   title: "About SV Rentals - Safe & Sanitized Bike Rentals in Hyderabad",
-  description: "Learn about SV Rentals, Hyderabad's trusted locally-owned bike rental service. We prioritize safety, cleanliness, and community with thoroughly sanitized bikes and professional service.",
+  description: "Learn about SV Rentals, Hyderabad&apos;s trusted locally-owned bike rental service. We prioritize safety, cleanliness, and community with thoroughly sanitized bikes and professional service.",
   keywords: [
     "about SV Rentals",
     "bike rental Hyderabad",
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: "About SV Rentals - Safe & Sanitized Bike Rentals in Hyderabad",
-    description: "Hyderabad's trusted locally-owned bike rental service prioritizing safety, cleanliness, and community service.",
+    description: "Hyderabad&apos;s trusted locally-owned bike rental service prioritizing safety, cleanliness, and community service.",
     type: "website",
   },
   alternates: {
@@ -35,7 +35,7 @@ export default function AboutPage() {
               Your Trusted Local Bike Rental Partner
             </h1>
             <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-              SV Rentals is Hyderabad's premier locally-owned bike rental service, committed to providing 
+              SV Rentals is Hyderabad&apos;s premier locally-owned bike rental service, committed to providing 
               safe, sanitized, and reliable transportation solutions for our community since our founding.
             </p>
           </div>
@@ -54,7 +54,7 @@ export default function AboutPage() {
                 <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
                   As a locally-owned business rooted in Hyderabad, we understand the unique transportation 
                   needs of our city. From navigating busy streets to finding the perfect bike for weekend 
-                  adventures, we've been serving our community with dedication and care.
+                  adventures, we&apos;ve been serving our community with dedication and care.
                 </p>
                 <p className="text-lg text-muted-foreground leading-relaxed">
                   Our local expertise means we know the best routes, understand traffic patterns, and 
@@ -121,7 +121,7 @@ export default function AboutPage() {
                 </div>
                 <h3 className="text-xl font-semibold text-foreground mb-4">Community Excellence</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  As your neighbors, we're invested in building lasting relationships through 
+                  As your neighbors, we&apos;re invested in building lasting relationships through 
                   exceptional service, fair pricing, and genuine care for our community.
                 </p>
               </Card>
@@ -146,7 +146,7 @@ export default function AboutPage() {
                 </h3>
                 <p className="text-muted-foreground">
                   Flexible pickup times, 24/7 customer support, and emergency assistance. 
-                  We're here for you around the clock.
+                  We&apos;re here for you around the clock.
                 </p>
               </div>
               
@@ -164,8 +164,8 @@ export default function AboutPage() {
             
             <div className="mt-12 p-8 bg-blue-50 rounded-xl">
               <p className="text-lg text-foreground font-medium mb-4">
-                "At SV Rentals, every bike tells a story of safety, every rental builds community trust, 
-                and every customer becomes part of our local community."
+                &quot;At SV Rentals, every bike tells a story of safety, every rental builds community trust, 
+                and every customer becomes part of our local community.&quot;
               </p>
               <p className="text-muted-foreground">— The SV Rentals Team</p>
             </div>

@@ -1,8 +1,9 @@
-import { Card, CardContent, CardDescription, CardTitle } from "@/components/ui/card"
-import { Bike, Clock, Shield, Star, Heart, Sparkles, Users } from "lucide-react"
+import { Card, CardDescription, CardTitle } from "@/components/ui/card"
+import { Heart, Sparkles, Users } from "lucide-react"
 import { ModernHeroSection } from "@/components/hero/ModernHeroSection"
 import { AvailableVehicles } from "@/components/AvailableVehicles"
 import { FAQSection } from "@/components/FAQSection"
+import { StoreLocations } from "@/components/StoreLocations"
 
 export default function Home() {
   return (
@@ -40,7 +41,7 @@ export default function Home() {
                 </div>
                 <CardTitle className="text-xl mb-3">Local & Personal</CardTitle>
                 <CardDescription>
-                  Locally-owned Hyderabad business. We know our city, we care about our community, and we're here for you 24/7.
+                  Locally-owned Hyderabad business. We know our city, we care about our community, and we&apos;re here for you 24/7.
                 </CardDescription>
               </Card>
               <Card className="enterprise-card text-center p-8">
@@ -57,6 +58,9 @@ export default function Home() {
         </div>
       </section>
 
+
+      {/* Store Locations */}
+      <StoreLocations />
 
       {/* FAQ Section */}
       <FAQSection />

@@ -1,16 +1,18 @@
 "use client"
 
 import { useState } from "react"
+import { useRouter } from "next/navigation"
 import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import { Calendar } from "@/components/ui/calendar"
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover"
-import { Command, CommandEmpty, CommandGroup, CommandInput, CommandItem, CommandList } from "@/components/ui/command"
+import { Command, CommandGroup, CommandItem, CommandList } from "@/components/ui/command"
 import { MapPin, Calendar as CalendarIcon, Clock, Search, Check, ChevronDown } from "lucide-react"
 import { format } from "date-fns"
 import { cn } from "@/lib/utils"
 
 export function SearchWidget() {
+  const router = useRouter()
   const [location, setLocation] = useState('')
   const [pickupDate, setPickupDate] = useState<Date | undefined>(undefined)
   const [returnDate, setReturnDate] = useState<Date | undefined>(undefined)
@@ -22,6 +24,24 @@ export function SearchWidget() {
     "Kukatpally, Hyderabad",
     "Madhapur, Hyderabad"
   ]
+
+  const handleSearch = () => {
+    const searchParams = new URLSearchParams()
+    
+    if (location) {
+      searchParams.append("location", location)
+    }
+    
+    if (pickupDate) {
+      searchParams.append("pickupDate", pickupDate.toISOString())
+    }
+    
+    if (returnDate) {
+      searchParams.append("returnDate", returnDate.toISOString())
+    }
+    
+    router.push(`/search?${searchParams.toString()}`)
+  }
 
   return (
     <motion.div
@@ -166,6 +186,7 @@ export function SearchWidget() {
             >
               <Button
                 size="lg"
+                onClick={handleSearch}
                 className="w-full h-[60px] bg-emerald-600 hover:bg-emerald-700 text-white font-semibold rounded-2xl shadow-lg hover:shadow-xl transition-all duration-200 flex items-center justify-center gap-2"
               >
                 <Search className="w-5 h-5" />

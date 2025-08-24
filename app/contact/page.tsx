@@ -16,7 +16,7 @@ export default function ContactPage() {
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-semibold tracking-tight mb-4">Contact us</h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Have questions? We're here to help! Reach out to us through any of the channels below.
+            Have questions? We&apos;re here to help! Reach out to us through any of the channels below.
           </p>
         </div>
 
@@ -116,7 +116,7 @@ export default function ContactPage() {
                   <span>Business hours</span>
                 </CardTitle>
                 <CardDescription>
-                  When we're available to serve you
+                  When we&apos;re available to serve you
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -146,7 +146,7 @@ export default function ContactPage() {
                   <span>Send us a message</span>
                 </CardTitle>
                 <CardDescription>
-                  Fill out the form and we'll get back to you within 24 hours
+                  Fill out the form and we&apos;ll get back to you within 24 hours
                 </CardDescription>
               </CardHeader>
               <CardContent>

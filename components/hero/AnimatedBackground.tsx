@@ -47,9 +47,9 @@ export function AnimatedBackground() {
             <stop offset="100%" stopColor="#f59e0b" stopOpacity="0.0" />
           </linearGradient>
           <linearGradient id="gGreen" x1="0%" y1="0%" x2="100%" y2="0%">
-            <stop offset="0%" stopColor="#059669" stopOpacity="0.0" />
-            <stop offset="50%" stopColor="#10b981" stopOpacity="0.95" />
-            <stop offset="100%" stopColor="#059669" stopOpacity="0.0" />
+            <stop offset="0%" stopColor="#34d399" stopOpacity="0.0" />
+            <stop offset="50%" stopColor="#6ee7b7" stopOpacity="0.85" />
+            <stop offset="100%" stopColor="#34d399" stopOpacity="0.0" />
           </linearGradient>
           <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
             <feGaussianBlur stdDeviation="4" result="b" />
@@ -76,12 +76,12 @@ export function AnimatedBackground() {
         />
 
         {/* Green road: base, highlight, animated dashes */}
-        <path id="greenRoad" d={GREEN_PATH} fill="none" stroke="#047857" strokeOpacity="0.22" strokeWidth="14" strokeLinecap="round" filter="url(#glow)" />
+        <path id="greenRoad" d={GREEN_PATH} fill="none" stroke="#10b981" strokeOpacity="0.18" strokeWidth="14" strokeLinecap="round" filter="url(#glow)" />
         <path d={GREEN_PATH} fill="none" stroke="url(#gGreen)" strokeWidth="6" strokeLinecap="round" />
         <motion.path
           d={GREEN_PATH}
           fill="none"
-          stroke="#a7f3d0"
+          stroke="#d1fae5"
           strokeWidth="2"
           strokeLinecap="round"
           strokeDasharray="1 14"
@@ -107,7 +107,7 @@ export function AnimatedBackground() {
             <animateMotion dur="15s" begin="2.8s" repeatCount="indefinite" rotate="auto">
               <mpath href="#greenRoad" />
             </animateMotion>
-            <g transform="translate(-13,-28)" className="text-emerald-400">
+            <g transform="translate(-13,-28)" className="text-emerald-300">
               <Bike width={26} height={26} className="drop-shadow-lg" />
             </g>
           </g>
@@ -124,7 +124,7 @@ export function AnimatedBackground() {
         transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
       >
         <div className="bg-gray-800/90 rounded-lg p-4 border border-gray-600/50 shadow-lg">
-          <div className="text-sm text-green-400 font-bold">HYDERABAD</div>
+          <div className="text-sm text-green-300 font-bold">HYDERABAD</div>
           <div className="text-xs text-gray-300">←CITY CENTER</div>
         </div>
       </motion.div>

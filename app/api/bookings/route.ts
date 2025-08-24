@@ -26,7 +26,7 @@ export async function GET(request: Request) {
     }
     
     return NextResponse.json(data)
-  } catch (error) {
+  } catch {
     return NextResponse.json(
       { error: 'Internal server error' },
       { status: 500 }
@@ -41,7 +41,7 @@ export async function POST(request: Request) {
     
     const { data, error } = await supabase
       .from('bookings')
-      .insert([body])
+      .insert(body)
       .select()
       .single()
     
@@ -50,7 +50,7 @@ export async function POST(request: Request) {
     }
     
     return NextResponse.json(data, { status: 201 })
-  } catch (error) {
+  } catch {
     return NextResponse.json(
       { error: 'Internal server error' },
       { status: 500 }
