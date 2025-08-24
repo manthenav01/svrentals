@@ -88,21 +88,9 @@ export default function ContactPage() {
               <CardContent>
                 <div className="space-y-2">
                   <div>
-                    <p className="font-medium">General Inquiries</p>
-                    <Link href="mailto:info@svrentals.com" className="text-primary hover:underline">
-                      info@svrentals.com
-                    </Link>
-                  </div>
-                  <div>
-                    <p className="font-medium">Bookings</p>
-                    <Link href="mailto:bookings@svrentals.com" className="text-primary hover:underline">
-                      bookings@svrentals.com
-                    </Link>
-                  </div>
-                  <div>
-                    <p className="font-medium">Support</p>
-                    <Link href="mailto:support@svrentals.com" className="text-primary hover:underline">
-                      support@svrentals.com
+                    <p className="font-medium">All Inquiries</p>
+                    <Link href="mailto:svrentals.hyd@gmail.com" className="text-primary hover:underline">
+                      svrentals.hyd@gmail.com
                     </Link>
                   </div>
                 </div>
@@ -122,16 +110,8 @@ export default function ContactPage() {
               <CardContent>
                 <div className="space-y-2">
                   <div className="flex justify-between">
-                    <span>Monday - Saturday</span>
-                    <span>8:00 AM - 8:00 PM</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span>Sunday</span>
-                    <span>9:00 AM - 6:00 PM</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span>Emergency Service</span>
-                    <span>9 AM - 8 PM</span>
+                    <span>Daily</span>
+                    <span>9:00 AM - 8:00 PM</span>
                   </div>
                 </div>
               </CardContent>
