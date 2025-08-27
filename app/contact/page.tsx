@@ -35,12 +35,13 @@ export default function ContactPage() {
               <CardContent>
                 <p className="text-muted-foreground mb-4">
                   SV Rentals Store<br />
-                  Main Road, Banjara Hills<br />
-                  Hyderabad, Telangana 500034<br />
+                  MIG 3rd Phase, Sathibabu Biryani Backside<br />
+                  15-31-2M-41/1, Kukatpally Housing Board Colony<br />
+                  Kukatpally, Hyderabad, Telangana 500072<br />
                   India
                 </p>
                 <Button asChild variant="brand">
-                  <Link href="https://maps.google.com/?q=Banjara+Hills,+Hyderabad" target="_blank">
+                  <Link href="https://maps.google.com/?q=MIG+3rd+Phase+Sathibabu+Biryani+Backside+15-31-2M-41/1+Kukatpally+Housing+Board+Colony+Kukatpally+Hyderabad+Telangana+500072" target="_blank">
                     Get Directions
                   </Link>
                 </Button>
@@ -182,18 +183,16 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <label htmlFor="bikeType" className="block text-sm font-medium mb-2">
-                      Interested Bike Type
+                      Interested Vehicle Type
                     </label>
                     <select
                       id="bikeType"
                       name="bikeType"
                       className="w-full px-3 py-2 rounded-lg border border-input bg-white focus:outline-none focus:ring-2 focus:ring-primary/30"
                     >
-                      <option value="">Select a bike type</option>
-                      <option value="mountain">Mountain Bike</option>
-                      <option value="city">City Bike</option>
-                      <option value="electric">Electric Bike</option>
-                      <option value="other">Other</option>
+                      <option value="">Select a vehicle type</option>
+                      <option value="scooter">Scooter</option>
+                      <option value="bike">Bike</option>
                     </select>
                   </div>
                   <div>

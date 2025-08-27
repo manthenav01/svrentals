@@ -6,10 +6,8 @@ import {
   Bike, 
   DollarSign, 
   Clock,
-  Star,
-  CheckCircle 
+ 
 } from "lucide-react"
-import { AvailableVehicles } from "@/components/AvailableVehicles"
 
 const services = [
   {
@@ -33,7 +31,7 @@ const services = [
   {
     icon: DollarSign,
     title: "Affordable Rates",
-    description: "Transparent pricing with no hidden charges. Best rates in Hyderabad starting from just ₹199/day with fuel-efficient vehicles.",
+    description: "Transparent pricing with no hidden charges. Best rates in Hyderabad starting from just ₹399/day with fuel-efficient vehicles.",
     keywords: "affordable rates, cheap bike rental, transparent pricing, best rates Hyderabad"
   },
   {
@@ -50,13 +48,6 @@ const services = [
   }
 ]
 
-const benefits = [
-  "Well-Maintained Fleet",
-  "Quick KYC Process",
-  "GPS Tracking",
-  "Emergency Support",
-  "Sanitized Vehicles"
-]
 
 export function ServicesSection() {
   return (
@@ -96,10 +87,6 @@ export function ServicesSection() {
             })}
           </div>
 
-          {/* Available Vehicles */}
-          <div className="mt-16">
-            <AvailableVehicles />
-          </div>
 
           {/* SEO Text Block */}
           <div className="mt-16 prose prose-lg max-w-none">
@@ -110,13 +97,13 @@ export function ServicesSection() {
               <div className="grid md:grid-cols-2 gap-8 text-gray-700">
                 <div>
                   <p className="mb-4">
-                    <strong>SV Rentals</strong> is Hyderabad's most trusted bike rental service, offering a comprehensive fleet of 
+                    <strong>SV Rentals</strong> is Hyderabad&apos;s most trusted bike rental service, offering a comprehensive fleet of 
                     well-maintained motorcycles and scooters. Whether you need a <strong>scooter for daily commuting</strong>, 
                     a <strong>bike for weekend trips</strong>, or a <strong>long-term rental solution</strong>, we have the perfect 
                     vehicle for your needs.
                   </p>
                   <p className="mb-4">
-                    Our <strong>affordable rental rates</strong> start from just ₹199/day, making us the most 
+                    Our <strong>affordable rental rates</strong> start from just ₹399/day, making us the most 
                     cost-effective choice for bike rentals in Hyderabad. We offer <strong>daily, weekly, and monthly rental packages</strong> 
                     with significant discounts for long-term bookings.
                   </p>

@@ -13,7 +13,7 @@ import { cn } from "@/lib/utils"
 
 export function SearchWidget() {
   const router = useRouter()
-  const [location, setLocation] = useState('Kukatpally, Hyderabad')
+  const [location, setLocation] = useState('KPHB Colony')
   const [pickupDate, setPickupDate] = useState<Date | undefined>(undefined)
   const [returnDate, setReturnDate] = useState<Date | undefined>(undefined)
   const [openLocation, setOpenLocation] = useState(false)
@@ -21,16 +21,9 @@ export function SearchWidget() {
   const [openReturnDate, setOpenReturnDate] = useState(false)
 
   const locations = [
-    "Kukatpally, Hyderabad",
-    "Madhapur, Hyderabad",
-    "Ameerpet, Hyderabad",
-    "Secunderabad, Hyderabad",
-    "Gachibowli, Hyderabad",
-    "Begumpet, Hyderabad",
-    "Kondapur, Hyderabad",
-    "Miyapur, Hyderabad",
-    "Bachupally, Hyderabad",
-    "Nizampet, Hyderabad"
+    "KPHB Colony",
+    "Kukatpally",
+    "Madhapur"
   ]
 
   const handleSearch = () => {
