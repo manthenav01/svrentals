@@ -72,7 +72,7 @@ export async function GET(request: Request) {
     }
     
     // Filter the cached data based on query parameters
-    const filteredData = filterBikes(bikesCache, type, available, location)
+    const filteredData = filterBikes(bikesCache || [], type, available, location)
     
     return NextResponse.json(filteredData)
   } catch (error) {
