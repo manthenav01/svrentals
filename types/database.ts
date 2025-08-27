@@ -17,6 +17,7 @@ export interface Database {
           price_per_hour: number
           price_per_day: number
           price_per_week: number
+          price_per_month: number
           available: boolean
           location: string
           gear_count: number | null
