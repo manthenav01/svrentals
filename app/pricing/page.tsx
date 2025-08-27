@@ -136,7 +136,7 @@ export default function PricingPage() {
             Transparent <span className="bg-gradient-to-r from-emerald-600 to-green-600 bg-clip-text text-transparent">Pricing</span>
           </h1>
           <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-            Choose the perfect rental duration for your needs. From daily commutes to monthly adventures, we've got you covered with competitive rates.
+            Choose the perfect rental duration for your needs. From daily commutes to monthly adventures, we&apos;ve got you covered with competitive rates.
           </p>
         </div>
 

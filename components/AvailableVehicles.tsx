@@ -14,7 +14,7 @@ import {
 } from "@/components/ui/carousel"
 import Link from "next/link"
 import Image from "next/image"
-import { Bike, MapPin, Image as ImageIcon, Star, Zap, Shield, ChevronLeft, ChevronRight } from "lucide-react"
+import { Bike, MapPin, Image as ImageIcon, Zap, Shield, ChevronLeft, ChevronRight } from "lucide-react"
 import { useBikes } from "@/hooks/use-bikes"
 import { Database } from "@/types/database"
 

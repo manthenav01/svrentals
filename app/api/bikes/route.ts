@@ -1,8 +1,15 @@
 import { createServerSupabaseClient } from '@/lib/supabase/server'
 import { NextResponse } from 'next/server'
 
+interface Bike {
+  type: string
+  available: boolean
+  location: string
+  [key: string]: unknown
+}
+
 // In-memory cache for bikes data
-let bikesCache: any = null
+let bikesCache: Bike[] | null = null
 let cacheTimestamp: number = 0
 const CACHE_DURATION = 24 * 60 * 60 * 1000 // 24 hours in milliseconds
 
@@ -20,10 +27,10 @@ async function fetchBikesFromDatabase() {
     throw new Error(error.message)
   }
   
-  return data
+  return data as Bike[]
 }
 
-function filterBikes(bikes: any[], type?: string | null, available?: string | null, location?: string | null) {
+function filterBikes(bikes: Bike[], type?: string | null, available?: string | null, location?: string | null) {
   let filteredBikes = [...bikes]
   
   if (type) {
@@ -68,10 +75,10 @@ export async function GET(request: Request) {
     const filteredData = filterBikes(bikesCache, type, available, location)
     
     return NextResponse.json(filteredData)
-  } catch (error: any) {
+  } catch (error) {
     console.error('Error in bikes API:', error)
     return NextResponse.json(
-      { error: error.message || 'Internal server error' },
+      { error: error instanceof Error ? error.message : 'Internal server error' },
       { status: 500 }
     )
   }
