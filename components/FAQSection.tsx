@@ -15,23 +15,23 @@ const faqs = [
   },
   {
     question: "Is fuel included in tariff?",
-    answer: "For electric bikes, charging is included in the rental price. For petrol bikes, you'll receive the bike with a full tank and should return it with the same fuel level. Any fuel consumed during your rental period is your responsibility."
+    answer: "You should return it with the same fuel level as we hand it over to you . Any fuel consumed during your rental period is your responsibility."
   },
   {
     question: "Can I reschedule my booking?",
-    answer: "Yes, you can reschedule your booking up to 24 hours before your scheduled pickup time without any charges. For changes within 24 hours, rescheduling fees may apply. Please contact us via WhatsApp to make changes."
+    answer: "Yes, you can reschedule your booking any time without any charges. Please contact us via WhatsApp to make changes."
   },
   {
     question: "Can I extend my trip after it ends?",
-    answer: "Absolutely! You can extend your rental period based on bike availability. Extension charges will be calculated at hourly rates. Please inform us at least 2 hours before your original return time to ensure the bike remains available for extension."
+    answer: "Absolutely! You can extend your rental period based on bike availability. Call us to make changes."
   },
   {
     question: "How do I pay?",
-    answer: "We accept multiple payment methods including cash, UPI, debit/credit cards, and digital wallets. A security deposit is required at the time of booking, which will be refunded after the safe return of the bike."
+    answer: "We accept multiple payment methods including cash, UPI and debit/credit cards. A security deposit is required at the time of booking, which will be refunded after the safe return of the bike."
   },
   {
     question: "Is there any kilometer capping?",
-    answer: "Our rentals include generous kilometer limits: 100km for half-day, 150km for full-day, and unlimited kilometers for weekly rentals. Additional kilometers are charged at ₹3 per km for city bikes and ₹5 per km for premium bikes."
+    answer: "Our rentals include generous kilometer limits: 80km for day. Additional kilometers are charged at ₹3 per km for city bikes and ₹5 per km for premium bikes."
   }
 ]
 

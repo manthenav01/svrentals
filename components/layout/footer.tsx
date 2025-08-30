@@ -9,7 +9,7 @@ export function Footer() {
           <div className="space-y-4">
             <h3 className="text-lg font-semibold text-foreground">SV Rentals</h3>
             <p className="text-sm text-muted-foreground">
-              Your trusted bike rental partner in Hyderabad. Quality bikes, affordable prices, excellent service.
+              Your trusted bike rental partner in KPHB Colony. Quality bikes, affordable prices, excellent service.
             </p>
           </div>
           

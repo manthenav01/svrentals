@@ -57,11 +57,11 @@ export function ServicesSection() {
           {/* Header */}
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-6">
-              Premium Bike & Scooter Rental Services in Hyderabad
+              Premium Bike & Scooter Rental Services in KPHB Colony
             </h2>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
               Experience the freedom of two-wheeler rentals with SV Rentals. From daily commutes to weekend adventures, 
-              we provide the most reliable and affordable bike rental services in Hyderabad with unmatched convenience.
+              we provide the most reliable and affordable bike rental services in KPHB Colony with unmatched convenience.
             </p>
           </div>
 
@@ -110,7 +110,7 @@ export function ServicesSection() {
                 </div>
                 <div>
                   <p className="mb-4">
-                    With <strong>multiple pickup points</strong> across Hyderabad including Kukatpally, Madhapur, and other prime locations, 
+                    With <strong>multiple pickup points</strong> across KPHB Colony and Madhapur in Hyderabad, 
                     we ensure maximum convenience for our customers. Our <strong>daily service (9 AM - 8 PM)</strong> includes instant booking, 
                     emergency roadside assistance, and dedicated customer support.
                   </p>

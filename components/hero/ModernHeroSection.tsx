@@ -88,7 +88,7 @@ export function ModernHeroSection() {
                   className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed font-normal"
                   style={{ textShadow: '0 1px 2px rgba(255,255,255,0.3)' }}
                 >
-                  Rent bikes in Hyderabad with affordable rates.
+                  Rent bikes in KPHB Colony with affordable rates.
                   Self-drive vehicle rentals with instant online booking and customer support.
                 </motion.p>
               </motion.div>

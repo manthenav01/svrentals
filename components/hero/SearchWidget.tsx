@@ -8,14 +8,14 @@ import { Calendar } from "@/components/ui/calendar"
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover"
 import { Command, CommandGroup, CommandItem, CommandList } from "@/components/ui/command"
 import { MapPin, Calendar as CalendarIcon, Clock, Search, Check, ChevronDown } from "lucide-react"
-import { format } from "date-fns"
+import { format, addDays } from "date-fns"
 import { cn } from "@/lib/utils"
 
 export function SearchWidget() {
   const router = useRouter()
   const [location, setLocation] = useState('KPHB Colony')
-  const [pickupDate, setPickupDate] = useState<Date | undefined>(undefined)
-  const [returnDate, setReturnDate] = useState<Date | undefined>(undefined)
+  const [pickupDate, setPickupDate] = useState<Date | undefined>(new Date())
+  const [returnDate, setReturnDate] = useState<Date | undefined>(addDays(new Date(), 3))
   const [openLocation, setOpenLocation] = useState(false)
   const [openPickupDate, setOpenPickupDate] = useState(false)
   const [openReturnDate, setOpenReturnDate] = useState(false)
@@ -122,7 +122,7 @@ export function SearchWidget() {
                   )}
                 >
                   <CalendarIcon className="mr-2 h-4 w-4" />
-                  {pickupDate ? format(pickupDate, "PPP") : <span>08/21/2025</span>}
+                  {pickupDate ? format(pickupDate, "PPP") : <span>Pick a date</span>}
                 </Button>
               </PopoverTrigger>
               <PopoverContent className="w-auto p-0">
@@ -158,7 +158,7 @@ export function SearchWidget() {
                   )}
                 >
                   <Clock className="mr-2 h-4 w-4" />
-                  {returnDate ? format(returnDate, "PPP") : <span>08/21/2025</span>}
+                  {returnDate ? format(returnDate, "PPP") : <span>Pick a date</span>}
                 </Button>
               </PopoverTrigger>
               <PopoverContent className="w-auto p-0">

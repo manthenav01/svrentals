@@ -35,7 +35,7 @@ export default function AboutPage() {
               Your Trusted Local Bike Rental Partner
             </h1>
             <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-              SV Rentals is Hyderabad&apos;s premier locally-owned bike rental service, committed to providing 
+              SV Rentals is KPHB Colony&apos;s premier locally-owned bike rental service, committed to providing 
               safe, sanitized, and reliable transportation solutions for our community since our founding.
             </p>
           </div>

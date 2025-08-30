@@ -116,7 +116,7 @@ export function AnimatedBackground() {
 
       {/* Floating city sign */}
       <motion.div
-        className="absolute top-1/5 right-16 text-blue-400/70"
+        className="absolute top-8 md:top-1/5 right-4 sm:right-8 md:right-16 text-blue-400/70 z-10"
         animate={{ 
           rotate: [0, 5, -5, 0],
           y: [0, -5, 0]
